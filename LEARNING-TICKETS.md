@@ -6,10 +6,10 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Learn how Sass fits into a normal HTML/CSS project.
 
-- [ ] Install Sass and add a script that watches your `.scss` file and outputs a `.css` file.
-- [ ] Create a `scss/` folder and one main Sass file.
-- [ ] Update your HTML to load the compiled CSS file.
-- [ ] Confirm that a small Sass change appears in the browser after compilation.
+- [x] Install Sass and add a script that watches your `.scss` file and outputs a `.css` file.
+- [x] Create a `scss/` folder and one main Sass file.
+- [x] Update your HTML to load the compiled CSS file.
+- [x] Confirm that a small Sass change appears in the browser after compilation.
 
 **Learning focus:** Sass compiles into regular CSS. The browser only receives the CSS file.
 

@@ -46,9 +46,9 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Use Sass variables for values that repeat.
 
-- [ ] Add a partial Sass file for colors, font weights, spacing, border radius, and breakpoints.
-- [ ] Use the style guide’s colors and Rubik font weights.
-- [ ] Import or forward these tokens into your main Sass file.
+- [x] Add a partial Sass file for colors, font weights, spacing, border radius, and breakpoints.
+- [x] Use the style guide’s colors and Rubik font weights.
+- [x] Import or forward these tokens into your main Sass file.
 
 **Learning focus:** Variables let you change a repeated design choice in one place.
 

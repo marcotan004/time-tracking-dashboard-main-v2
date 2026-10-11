@@ -32,11 +32,11 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Create a solid, accessible structure before visual styling.
 
-- [ ] Add the profile section and three timeframe controls.
-- [ ] Add the six activity cards: Work, Play, Study, Exercise, Social, and Self Care.
-- [ ] Use actual buttons for the timeframe controls.
-- [ ] Give every card a clear heading.
-- [ ] Keep repeated cards consistent in structure.
+- [x] Add the profile section and three timeframe controls.
+- [x] Add the six activity cards: Work, Play, Study, Exercise, Social, and Self Care.
+- [x] Use actual buttons for the timeframe controls.
+- [x] Give every card a clear heading.
+- [x] Keep repeated cards consistent in structure.
 
 **Learning focus:** Good HTML makes styling and JavaScript much easier later.
 

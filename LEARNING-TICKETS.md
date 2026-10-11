@@ -19,10 +19,10 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Practice translating a visual design into page sections.
 
-- [ ] Compare the mobile and desktop images in `design/`.
-- [ ] Identify the major pieces: profile card, timeframe controls, and six activity cards.
-- [ ] Decide which parts are repeated and should share the same HTML and CSS structure.
-- [ ] Write a short note about where you think Grid fits and where Flexbox fits.
+- [x] Compare the mobile and desktop images in `design/`.
+- [x] Identify the major pieces: profile card, timeframe controls, and six activity cards.
+- [x] Decide which parts are repeated and should share the same HTML and CSS structure.
+- [x] Write a short note about where you think Grid fits and where Flexbox fits.
 
 **Learning focus:** Flexbox is ideal inside small components. CSS Grid is likely useful for the overall desktop dashboard.
 

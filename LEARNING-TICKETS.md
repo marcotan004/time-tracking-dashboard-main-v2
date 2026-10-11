@@ -58,10 +58,10 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Establish a consistent base for the entire page.
 
-- [ ] Set the page background, Rubik font, text defaults, and box sizing.
-- [ ] Remove default browser spacing where appropriate.
-- [ ] Ensure readable contrast and sensible line-height.
-- [ ] Load Rubik with the required 300, 400, and 500 weights.
+- [x] Set the page background, Rubik font, text defaults, and box sizing.
+- [x] Remove default browser spacing where appropriate.
+- [x] Ensure readable contrast and sensible line-height.
+- [x] Load Rubik with the required 300, 400, and 500 weights.
 
 **Learning focus:** Base styles prevent small inconsistencies from building up component by component.
 

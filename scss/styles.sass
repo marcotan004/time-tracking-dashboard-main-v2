@@ -1,4 +1,5 @@
 @use 'theme'
+@use 'typography'
 
 *,
 *::before,
@@ -8,5 +9,11 @@
     padding: 0
 
 body
+    background-color: theme.$navy-950
+
     font-family: theme.$font-stack
-    font-weight: theme.$font-weight-light
+    font-weight: theme.$font-weight-regular
+    line-height: 1.5
+    color: theme.$white
+
+    min-height: 100vh

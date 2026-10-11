@@ -1,0 +1,22 @@
+@use 'theme'
+
+@mixin default_font()
+    font-family: theme.$font-stack
+
+@mixin text-display
+    @include default_font
+    font-size: 56px
+    line-height: 66px
+    font-weight: theme.$font-weight-light
+
+@mixin card-title
+    @include default_font
+    font-size: 18px
+    line-height: 21px
+    font-weight: theme.$font-weight-medium
+
+@mixin supporting-text
+    @include default_font
+    font-size: 15px
+    line-height: 18px
+    font-weight: theme.$font-weight-regular

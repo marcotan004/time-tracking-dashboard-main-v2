@@ -7,8 +7,12 @@
 }
 
 body {
+  background-color: #0E1323;
   font-family: "Rubik", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #FFFFFF;
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

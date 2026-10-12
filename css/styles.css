@@ -12,7 +12,140 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #FFFFFF;
+  padding: 24px;
   min-height: 100vh;
+}
+
+img {
+  object-fit: cover;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  width: 100%;
+}
+
+button {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  border: 0;
+}
+
+.activity-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  background: #1C204B;
+  border-radius: 15px;
+}
+.profile .profile-card {
+  background-color: #5747ea;
+  display: flex;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 15px;
+  align-items: flex-start;
+}
+.profile .profile-card .profile-picture {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+}
+.profile .profile-card .profile-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.profile .profile-card .profile-desc p {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #bbc0ff;
+}
+.profile .profile-card .profile-desc h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+}
+.profile .time-tracking-options-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-block: 24px;
+}
+.profile .time-tracking-options-menu button {
+  width: 109px;
+  color: #7078c9;
+}
+.profile .time-tracking-options-menu button.is-selected {
+  color: #FFFFFF;
+}
+.profile .time-tracking-options-menu button:hover {
+  color: #FFFFFF;
+}
+.profile .time-tracking-options-menu button:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 2px;
+}
+
+@media (min-width: 64rem) {
+  body {
+    display: grid;
+    align-content: center;
+  }
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1116px;
+    margin-inline: auto;
+  }
+  .profile {
+    grid-column: 1/2;
+  }
+  .profile .profile-card {
+    gap: 40px;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .profile .profile-card .profile-picture {
+    height: 78px;
+    width: 78px;
+  }
+  .profile .profile-card .profile-desc {
+    gap: 0;
+  }
+  .profile .profile-card .profile-desc h1 {
+    font-size: 40px;
+    line-height: 47px;
+  }
+  .profile .time-tracking-options-menu {
+    padding-block: 28px;
+    padding-inline: 32px;
+    flex-direction: column;
+    gap: 21px;
+  }
+  .profile .time-tracking-options-menu button {
+    display: flex;
+  }
+  .activity-card-grid {
+    grid-column: 2/-1;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

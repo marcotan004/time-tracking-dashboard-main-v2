@@ -71,9 +71,9 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Build the fixed sidebar-style component first.
 
-- [ ] Match the mobile profile layout.
-- [ ] Create visible active, hover, and keyboard-focus states for Daily, Weekly, and Monthly.
-- [ ] On desktop, adapt it to the taller left-side card shown in the design.
+- [x] Match the mobile profile layout.
+- [x] Create visible active, hover, and keyboard-focus states for Daily, Weekly, and Monthly.
+- [x] On desktop, adapt it to the taller left-side card shown in the design.
 
 **Learning focus:** Interactive elements need both mouse and keyboard feedback. Hover alone is not enough.
 
@@ -109,10 +109,10 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Make the design work from small phones through desktop.
 
-- [ ] Start mobile-first: one-column content at narrow widths.
-- [ ] Add a breakpoint where the activity cards become a multi-column grid.
-- [ ] At desktop, place the profile card beside the card grid.
-- [ ] Test 320px, 375px, 768px, and 1440px—not only the two supplied design widths.
+- [x] Start mobile-first: one-column content at narrow widths.
+- [x] Add a breakpoint where the activity cards become a multi-column grid.
+- [x] At desktop, place the profile card beside the card grid.
+- [x] Test 320px, 375px, 768px, and 1440px—not only the two supplied design widths.
 
 **Learning focus:** A media query should respond to where the layout becomes cramped, not merely copy a device name.
 

@@ -39,12 +39,6 @@ button {
   border: 0;
 }
 
-.activity-card-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-}
-
 .profile {
   display: flex;
   flex-direction: column;
@@ -102,6 +96,73 @@ button {
 .profile .time-tracking-options-menu button:focus-visible {
   outline: 2px solid #FFFFFF;
   outline-offset: 2px;
+}
+
+.activity-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.activity-card {
+  border-radius: 15px;
+  padding-top: 33px;
+  background-repeat: no-repeat;
+  background-position: right 16px top -14px, left top;
+  overflow: hidden;
+}
+
+.activity-card--work {
+  background-color: transparent;
+  background-image: url("../images/icon-work.svg"), linear-gradient(to bottom, #ff8b64 0px, #ff8b64 60px, transparent 60px, transparent 100%);
+}
+
+.activity-card-content {
+  background-color: #1C204B;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+.activity-card-content .icon-button {
+  padding: 8px;
+}
+.activity-card-content:hover {
+  background-color: #33397a;
+}
+.activity-card-content h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+}
+.activity-card-content .time-tracking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.activity-card-content .time-tracking-header .icon-button {
+  cursor: default;
+}
+.activity-card-content .time-tracking-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.activity-card-content .time-tracking-summary .time-tracking-summary-text {
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 300;
+}
+.activity-card-content .time-tracking-summary .time-tracking-summary-subtext {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #bbc0ff;
 }
 
 @media (min-width: 64rem) {

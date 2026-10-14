@@ -37,11 +37,6 @@ button
     transition: color 0.3s ease
     border: 0
 
-.activity-card-grid
-    display: grid
-    grid-template-columns: 1fr
-    gap: theme.$spacing-300
-
 .profile
     display: flex
     flex-direction: column
@@ -93,6 +88,60 @@ button
             &:focus-visible
                 outline: 2px solid theme.$white
                 outline-offset: 2px
+
+.activity-card-grid
+    display: grid
+    grid-template-columns: 1fr
+    gap: theme.$spacing-300
+
+.activity-card
+    border-radius: theme.$card-radius
+    padding-top: 33px
+    background-repeat: no-repeat
+    background-position: right 16px top -14px, left top
+    overflow: hidden
+
+.activity-card--work
+    background-color: transparent
+    background-image: url('../images/icon-work.svg'), linear-gradient(to bottom, theme.$orange-300 0px, theme.$orange-300 60px, transparent 60px, transparent 100%)
+
+.activity-card-content
+    background-color: theme.$navy-900
+    display: flex
+    flex-direction: column
+    gap: theme.$spacing-100
+    padding: theme.$spacing-300
+    border-radius: theme.$card-radius
+    transition: background-color 0.3s ease
+
+    .icon-button
+        padding: theme.$spacing-100
+
+    &:hover
+        background-color: theme.$navy-800
+
+    h2
+        @include typography.card-title
+
+    .time-tracking-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .icon-button
+            cursor: default
+
+    .time-tracking-summary
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .time-tracking-summary-text
+            @include typography.hour-card-text
+
+        .time-tracking-summary-subtext
+            @include typography.supporting-text
+            color: theme.$navy-200
 
 @media (min-width: theme.$layout-breakpoint)
     body

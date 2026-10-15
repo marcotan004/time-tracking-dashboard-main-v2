@@ -112,9 +112,34 @@ button {
   overflow: hidden;
 }
 
+.activity-card--play {
+  background-color: transparent;
+  background-image: url("../images/icon-play.svg"), linear-gradient(to bottom, #55c2e6 0px, #55c2e6 60px, transparent 60px, transparent 100%);
+}
+
+.activity-card--study {
+  background-color: transparent;
+  background-image: url("../images/icon-study.svg"), linear-gradient(to bottom, #ff5e7d 0px, #ff5e7d 60px, transparent 60px, transparent 100%);
+}
+
+.activity-card--exercise {
+  background-color: transparent;
+  background-image: url("../images/icon-exercise.svg"), linear-gradient(to bottom, #4bcf82 0px, #4bcf82 60px, transparent 60px, transparent 100%);
+}
+
 .activity-card--work {
   background-color: transparent;
   background-image: url("../images/icon-work.svg"), linear-gradient(to bottom, #ff8b64 0px, #ff8b64 60px, transparent 60px, transparent 100%);
+}
+
+.activity-card--social {
+  background-color: transparent;
+  background-image: url("../images/icon-social.svg"), linear-gradient(to bottom, #7335d2 0px, #7335d2 60px, transparent 60px, transparent 100%);
+}
+
+.activity-card--self-care {
+  background-color: transparent;
+  background-image: url("../images/icon-self-care.svg"), linear-gradient(to bottom, #f1c75b 0px, #f1c75b 60px, transparent 60px, transparent 100%);
 }
 
 .activity-card-content {

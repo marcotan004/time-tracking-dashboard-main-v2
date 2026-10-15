@@ -96,10 +96,10 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Reuse a structure while allowing small visual differences.
 
-- [ ] Add the remaining five cards.
-- [ ] Use the supplied image assets for each card’s icon.
-- [ ] Give each card its correct accent color.
-- [ ] Keep internal spacing and type hierarchy consistent.
+- [x] Add the remaining five cards.
+- [x] Use the supplied image assets for each card’s icon.
+- [x] Give each card its correct accent color.
+- [x] Keep internal spacing and type hierarchy consistent.
 
 **Learning focus:** Reusable HTML classes plus Sass nesting should make shared styles clear. Avoid nesting selectors too deeply.
 
@@ -138,9 +138,9 @@ Work through these tickets in order. Each one is intentionally small so you can 
 - [ ] Add click handlers to the timeframe buttons.
 - [ ] Update current and previous hours for every card when a timeframe changes.
 - [ ] Change the previous-period label correctly:
-  - [ ] Daily: “Yesterday”
-  - [ ] Weekly: “Last Week”
-  - [ ] Monthly: “Last Month”
+- [ ] Daily: “Yesterday”
+- [ ] Weekly: “Last Week”
+- [ ] Monthly: “Last Month”
 - [ ] Update the active button style and consider `aria-pressed` for the selected control.
 
 **Learning focus:** Each click should follow a simple flow: determine selected timeframe, read matching data, then update the UI.

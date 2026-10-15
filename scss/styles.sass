@@ -96,7 +96,7 @@ button
 
 .activity-card
     border-radius: theme.$card-radius
-    padding-top: 33px
+    padding-top: 45px
     background-repeat: no-repeat
     background-position: right 16px top -14px, left top
     overflow: hidden
@@ -184,3 +184,14 @@ button
     .activity-card-grid
         grid-column: 2 / -1
         grid-template-columns: repeat(3, 1fr)
+    
+    .activity-card-content
+        gap: theme.$spacing-300
+
+        .time-tracking-summary
+            flex-direction: column
+            align-items: flex-start
+            gap: theme.$spacing-100
+
+            .time-tracking-summary-text
+                @include typography.text-display

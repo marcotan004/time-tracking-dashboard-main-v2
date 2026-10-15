@@ -83,10 +83,10 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Learn component thinking before repeating the design.
 
-- [ ] Start with Work only.
-- [ ] Create its colored background layer, icon, content area, title, current hours, previous-period text, and ellipsis control.
-- [ ] Match the mobile design first.
-- [ ] Add the card hover state.
+- [x] Start with Work only.
+- [x] Create its colored background layer, icon, content area, title, current hours, previous-period text, and ellipsis control.
+- [x] Match the mobile design first.
+- [x] Add the card hover state.
 
 **Learning focus:** Build and refine one pattern before copying it. This makes bugs much easier to fix.
 

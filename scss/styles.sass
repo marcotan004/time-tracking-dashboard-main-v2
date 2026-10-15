@@ -96,7 +96,7 @@ button
 
 .activity-card
     border-radius: theme.$card-radius
-    padding-top: 45px
+    padding-top: 33px
     background-repeat: no-repeat
     background-position: right 16px top -14px, left top
     overflow: hidden
@@ -129,6 +129,8 @@ button
         align-items: center
 
         .icon-button
+            display: flex
+            padding: 0
             color: theme.$navy-200
             cursor: pointer
 
@@ -184,6 +186,9 @@ button
 
             button
                 display: flex
+        
+    .activity-card
+        padding-top: 45px
 
     .activity-card-grid
         grid-column: 2 / -1

@@ -106,7 +106,7 @@ button {
 
 .activity-card {
   border-radius: 15px;
-  padding-top: 45px;
+  padding-top: 33px;
   background-repeat: no-repeat;
   background-position: right 16px top -14px, left top;
   overflow: hidden;
@@ -144,6 +144,8 @@ button {
   align-items: center;
 }
 .activity-card-content .time-tracking-header .icon-button {
+  display: flex;
+  padding: 0;
   color: #bbc0ff;
   cursor: pointer;
 }
@@ -206,6 +208,9 @@ button {
   }
   .profile .time-tracking-options-menu button {
     display: flex;
+  }
+  .activity-card {
+    padding-top: 45px;
   }
   .activity-card-grid {
     grid-column: 2/-1;

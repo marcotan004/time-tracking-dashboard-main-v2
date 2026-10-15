@@ -144,7 +144,11 @@ button {
   align-items: center;
 }
 .activity-card-content .time-tracking-header .icon-button {
-  cursor: default;
+  color: #bbc0ff;
+  cursor: pointer;
+}
+.activity-card-content .time-tracking-header .icon-button:hover {
+  color: #FFFFFF;
 }
 .activity-card-content .time-tracking-summary {
   display: flex;

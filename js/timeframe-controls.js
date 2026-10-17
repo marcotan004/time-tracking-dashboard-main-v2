@@ -1,18 +1,15 @@
 export function setTimeTrackingButtonHandlers(onModeChange) {
     const buttons = document.querySelectorAll(".time-tracking-options-menu button");
-    for (let i = 0; i < buttons.length; i++) {
-        const button = buttons[i];
-
+    for (const button of buttons) {
         button.addEventListener('click', function() {
             onModeChange(button.dataset.mode);
         })
     }
 }
 
-export function onButtonModeSelection(mode) {
+export function updateTimeframeSelection(mode) {
     const buttons = document.querySelectorAll(".time-tracking-options-menu button");
-    for (let i = 0; i < buttons.length; i++) {
-        const button = buttons[i];
+    for (const button of buttons) {
         if (button.dataset.mode === mode) {
             addButtonSelection(button);
         } else {

@@ -1,5 +1,5 @@
 import {loadActivities} from './activities-api.js'
-import {setTimeTrackingButtonHandlers, onButtonModeSelection} from './timeframe-controls.js'
+import {setTimeTrackingButtonHandlers, updateTimeframeSelection} from './timeframe-controls.js'
 import {setActivityCards} from './activity-cards.js'
 
 let mode = 'daily';
@@ -11,13 +11,13 @@ async function init() {
         setMode(mode);
         setTimeTrackingButtonHandlers(setMode);
     } catch(error) {
-        console.error("Failed to read the file:", error);
+        console.error("Failed to load dashboard:", error);
     }
 }
 
-function setMode(updated) {
-    mode = updated;
-    onButtonModeSelection(updated);
+function setMode(selectedMode) {
+    mode = selectedMode;
+    updateTimeframeSelection(selectedMode);
     setActivityCards(activities, mode);
 }
 

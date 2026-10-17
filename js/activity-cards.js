@@ -1,4 +1,4 @@
-const card_settings = {
+const cardSettings = {
     'daily': {
         description: 'Yesterday'
     },
@@ -11,8 +11,8 @@ const card_settings = {
 }
 
 function getCard(title) {
-    const class_name = title.toLowerCase().replaceAll(' ', '-');
-    return document.querySelector(`.activity-card--${class_name}`)
+    const className = title.toLowerCase().replaceAll(' ', '-');
+    return document.querySelector(`.activity-card--${className}`)
 }
 
 function setCardFields(card, activity, mode) {
@@ -23,13 +23,12 @@ function setCardFields(card, activity, mode) {
     const summary = card.querySelector('.time-tracking-summary-text');
     summary.textContent = `${timeframes[mode].current}hrs`;
 
-    const summary_subtext = card.querySelector('.time-tracking-summary-subtext');
-    summary_subtext.textContent = `${card_settings[mode].description} - ${timeframes[mode].previous} hrs`
+    const summarySubtext = card.querySelector('.time-tracking-summary-subtext');
+    summarySubtext.textContent = `${cardSettings[mode].description} - ${timeframes[mode].previous} hrs`
 }
 
 export function setActivityCards(activities, mode) {
-    for(let i = 0; i < activities.length; i++) {
-        const activity = activities[i];
+    for(const activity of activities) {
         const card = getCard(activity.title);
         setCardFields(card, activity, mode);
     }

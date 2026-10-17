@@ -95,6 +95,7 @@ button
     gap: theme.$spacing-300
 
 .activity-card
+    background-color: transparent
     border-radius: theme.$card-radius
     padding-top: 33px
     background-repeat: no-repeat
@@ -102,27 +103,21 @@ button
     overflow: hidden
 
 .activity-card--play
-    background-color: transparent
     background-image: url('../images/icon-play.svg'), linear-gradient(to bottom, theme.$blue-300 0px, theme.$blue-300 60px, transparent 60px, transparent 100%)
 
 .activity-card--study
-    background-color: transparent
     background-image: url('../images/icon-study.svg'), linear-gradient(to bottom, theme.$pink-400 0px, theme.$pink-400 60px, transparent 60px, transparent 100%)
 
 .activity-card--exercise
-    background-color: transparent
     background-image: url('../images/icon-exercise.svg'), linear-gradient(to bottom, theme.$green-400 0px, theme.$green-400 60px, transparent 60px, transparent 100%)
 
 .activity-card--work
-    background-color: transparent
     background-image: url('../images/icon-work.svg'), linear-gradient(to bottom, theme.$orange-300 0px, theme.$orange-300 60px, transparent 60px, transparent 100%)
 
 .activity-card--social
-    background-color: transparent
     background-image: url('../images/icon-social.svg'), linear-gradient(to bottom, theme.$purple-700 0px, theme.$purple-700 60px, transparent 60px, transparent 100%)
 
 .activity-card--self-care
-    background-color: transparent
     background-image: url('../images/icon-self-care.svg'), linear-gradient(to bottom, theme.$yellow-300 0px, theme.$yellow-300 60px, transparent 60px, transparent 100%)
 
 .activity-card-content
@@ -206,14 +201,14 @@ button
 
             button
                 display: flex
-        
+
     .activity-card
         padding-top: 45px
 
     .activity-card-grid
         grid-column: 2 / -1
         grid-template-columns: repeat(3, 1fr)
-    
+
     .activity-card-content
         gap: theme.$spacing-300
 

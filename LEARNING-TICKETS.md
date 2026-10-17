@@ -122,10 +122,10 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Practice a useful, beginner-friendly JavaScript workflow.
 
-- [ ] Use `fetch()` to read the local JSON data.
-- [ ] Log the loaded data first, so you can inspect its shape in DevTools.
-- [ ] Use the data to populate card titles and hours.
-- [ ] Keep the card layout separate from the data-handling logic as much as possible.
+- [x] Use `fetch()` to read the local JSON data.
+- [x] Log the loaded data first, so you can inspect its shape in DevTools.
+- [x] Use the data to populate card titles and hours.
+- [x] Keep the card layout separate from the data-handling logic as much as possible.
 
 **Learning focus:** Data is easier to use when you first inspect it, then decide exactly which values your UI needs.
 
@@ -135,13 +135,13 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Connect button events, data, and DOM updates.
 
-- [ ] Add click handlers to the timeframe buttons.
-- [ ] Update current and previous hours for every card when a timeframe changes.
-- [ ] Change the previous-period label correctly:
-- [ ] Daily: “Yesterday”
-- [ ] Weekly: “Last Week”
-- [ ] Monthly: “Last Month”
-- [ ] Update the active button style and consider `aria-pressed` for the selected control.
+- [x] Add click handlers to the timeframe buttons.
+- [x] Update current and previous hours for every card when a timeframe changes.
+- [x] Change the previous-period label correctly:
+- [x] Daily: “Yesterday”
+- [x] Weekly: “Last Week”
+- [x] Monthly: “Last Month”
+- [x] Update the active button style and consider `aria-pressed` for the selected control.
 
 **Learning focus:** Each click should follow a simple flow: determine selected timeframe, read matching data, then update the UI.
 

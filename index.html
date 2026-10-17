@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
-
+  <script src="script.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
@@ -28,9 +28,9 @@
         </div>
       </div>
       <div class="time-tracking-options-menu">
-        <button type="button">Daily</button>
-        <button class="is-selected" type="button">Weekly</button>
-        <button type="button">Monthly</button>
+        <button data-mode="daily" type="button">Daily</button>
+        <button data-mode="weekly" type="button">Weekly</button>
+        <button data-mode="monthly" type="button">Monthly</button>
       </div>
     </section>
     <section class="activity-card-grid">

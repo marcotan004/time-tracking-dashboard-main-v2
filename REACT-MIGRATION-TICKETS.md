@@ -21,17 +21,17 @@ Keep this as one page. Routing, global state libraries, UI kits, and server-data
 
 ## 1. Establish the baseline and tooling
 
-- [ ] Record the current mobile/desktop appearance and expected timeframe values.
-- [ ] Preserve the working version in Git and migrate on `codex/react-migration`.
-- [ ] Add Vite's React TypeScript setup to this repository without overwriting challenge assets, documentation, or instructions.
-- [ ] Add development, build, type-check, lint, and formatting-check scripts.
-- [ ] Use an actively supported Node version compatible with current Vite requirements. See the [Vite setup guide](https://vite.dev/guide/).
+- [x] Record the current mobile/desktop appearance and expected timeframe values.
+- [x] Preserve the working version in Git and migrate on `codex/react-migration`.
+- [x] Add Vite's React TypeScript setup to this repository without overwriting challenge assets, documentation, or instructions.
+- [x] Add development, build, type-check, lint, and formatting-check scripts.
+- [x] Use an actively supported Node version compatible with current Vite requirements. See the [Vite setup guide](https://vite.dev/guide/).
 
 **Done when:** A minimal React page runs locally and the production build succeeds.
 
 ## 2. Move one static section into JSX
 
-- [ ] Create the React entry point and an `App` component.
+- [x] Create the React entry point and an `App` component.
 - [ ] Build a static `ProfileCard`, including its existing semantic markup.
 - [ ] Learn `className`, JSX expressions, component names, and self-closing tags.
 - [ ] Import the existing Sass entry directly; remove the HTML link to separately compiled CSS.

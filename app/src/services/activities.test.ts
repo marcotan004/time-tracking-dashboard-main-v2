@@ -19,7 +19,7 @@ describe("getActivities", () => {
     ];
     const fetchMock = vi.fn().mockResolvedValue(Response.json(data));
     vi.stubGlobal("fetch", fetchMock);
-    await expect(getActivities()).resolves.toEqual(data);
+    await expect(getActivities("/data.json")).resolves.toEqual(data);
     expect(fetchMock).toHaveBeenCalledExactlyOnceWith("/data.json");
   });
 
@@ -29,19 +29,23 @@ describe("getActivities", () => {
       "fetch",
       vi.fn().mockResolvedValue({ ok: false, status: 404, json }),
     );
-    await expect(getActivities()).rejects.toThrow("HTTP error! Status: 404");
+    await expect(getActivities("/data.json")).rejects.toThrow(
+      "HTTP error! Status: 404",
+    );
     expect(json).not.toHaveBeenCalled();
   });
 
   it("propagates network failures", async () => {
     const error = new TypeError("Network unavailable");
     vi.stubGlobal("fetch", vi.fn().mockRejectedValue(error));
-    await expect(getActivities()).rejects.toBe(error);
+    await expect(getActivities("/data.json")).rejects.toBe(error);
   });
 
   it("rejects malformed JSON", async () => {
     vi.stubGlobal("fetch", vi.fn().mockResolvedValue(new Response("not JSON")));
-    await expect(getActivities()).rejects.toBeInstanceOf(SyntaxError);
+    await expect(getActivities("/data.json")).rejects.toBeInstanceOf(
+      SyntaxError,
+    );
   });
 
   it("rejects valid JSON with an invalid activity shape", async () => {
@@ -51,6 +55,8 @@ describe("getActivities", () => {
         .fn()
         .mockResolvedValue(Response.json([{ title: "Play", timeframes: {} }])),
     );
-    await expect(getActivities()).rejects.toThrow("timeframes.daily");
+    await expect(getActivities("/data.json")).rejects.toThrow(
+      "timeframes.daily",
+    );
   });
 });

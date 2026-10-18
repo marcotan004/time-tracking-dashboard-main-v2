@@ -1,12 +1,13 @@
 import { useState } from "react";
 import ProfileCard from "./components/ProfileCard/ProfileCard";
 import ActivityCard from "./components/ActivityCard/ActivityCard";
-import type { Activity, Timeframe } from "./types";
+import type { Timeframe } from "./types";
 import "./App.sass";
+import { useActivities } from "./hooks/useActivities";
 
 function App() {
   const [mode, setMode] = useState<Timeframe>("daily");
-  const activities: Activity[] = [];
+  const {data: activities, error, isLoading} = useActivities();
 
   return (
     <main>
@@ -19,7 +20,9 @@ function App() {
         />
       </div>
       <section className="activity-card-grid">
-        {activities.map((activity) => (
+        {isLoading && <p role="status">Loading activities...</p>}
+        {!isLoading && error && <p role="alert">Could not load activities.</p>}
+        {!isLoading && !error && (activities ?? []).map((activity) => (
           <ActivityCard key={activity.title} mode={mode} activity={activity} />
         ))}
       </section>

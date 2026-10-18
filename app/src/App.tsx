@@ -9,15 +9,15 @@ function App() {
 
   return (
     <>
-    <div className="dashboard-profile">
-      <ProfileCard
-        name="Jeremy Robson"
-        profileImage="/images/image-jeremy.png"
-        mode="daily"
-        onModeChange={() => {}}
-      />
-    </div>
-      
+      <div className="dashboard-profile">
+        <ProfileCard
+          name="Jeremy Robson"
+          profileImage="/images/image-jeremy.png"
+          mode="daily"
+          onModeChange={() => {}}
+        />
+      </div>
+
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />

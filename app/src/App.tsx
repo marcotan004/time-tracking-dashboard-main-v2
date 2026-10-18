@@ -7,7 +7,7 @@ import { useActivities } from "./hooks/useActivities";
 
 function App() {
   const [mode, setMode] = useState<Timeframe>("daily");
-  const {data: activities, error, isLoading} = useActivities();
+  const { data: activities, error, isLoading } = useActivities();
 
   return (
     <main>
@@ -22,9 +22,15 @@ function App() {
       <section className="activity-card-grid">
         {isLoading && <p role="status">Loading activities...</p>}
         {!isLoading && error && <p role="alert">Could not load activities.</p>}
-        {!isLoading && !error && (activities ?? []).map((activity) => (
-          <ActivityCard key={activity.title} mode={mode} activity={activity} />
-        ))}
+        {!isLoading &&
+          !error &&
+          (activities ?? []).map((activity) => (
+            <ActivityCard
+              key={activity.title}
+              mode={mode}
+              activity={activity}
+            />
+          ))}
       </section>
     </main>
   );

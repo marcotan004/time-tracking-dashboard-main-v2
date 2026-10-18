@@ -29,15 +29,22 @@ Keep this as one page. Routing, global state libraries, UI kits, and server-data
 
 **Done when:** A minimal React page runs locally and the production build succeeds.
 
-## 2. Move one static section into JSX
+## 2. Build a reusable, prop-driven profile component
 
 - [x] Create the React entry point and an `App` component.
-- [ ] Build a static `ProfileCard`, including its existing semantic markup.
+- [x] Build a static `ProfileCard`, including its existing semantic markup.
+- [ ] Define TypeScript props for the person's name and profile image URL.
+- [ ] Pass the profile details from `App` and render them through JSX expressions in `ProfileCard`.
+- [ ] Keep profile details in props rather than copying them into component state; derive meaningful image alt text from the supplied name.
+- [ ] Temporarily supply a different name and image from `App` to verify that the same component displays another person, then restore Jeremy's details.
 - [ ] Learn `className`, JSX expressions, component names, and self-closing tags.
 - [ ] Import the existing Sass entry directly; remove the HTML link to separately compiled CSS.
 - [ ] Keep images under `public/images` and update Sass image URLs to `/images/...`.
+- [ ] Load Rubik in the React app's HTML and verify the portrait, fonts, and responsive profile layout in the browser.
 
-**Done when:** The profile matches its previous appearance and Sass edits update through Vite.
+Receiving props makes the profile respond to the values its parent supplies. No profile state or effect is needed for these static details. Timeframe selection and its controls remain in section 5, where the same state will also drive the activity cards.
+
+**Done when:** `ProfileCard` displays the name and image supplied by `App`, has appropriate image alt text, matches its previous appearance on mobile and desktop, and Sass edits update through Vite. Type checking and the production build pass.
 
 ## 3. Build a typed activity component
 

@@ -1,0 +1,25 @@
+@use "theme"
+
+main
+  display: grid
+  grid-template-columns: 1fr
+  gap: theme.$spacing-300
+  width: 100%
+
+.dashboard-profile
+  grid-column: 1 / 2
+
+.activity-card-grid
+  display: grid
+  grid-template-columns: 1fr
+  gap: theme.$spacing-300
+
+@media (min-width: theme.$layout-breakpoint)
+  main
+    grid-template-columns: repeat(4, 1fr)
+    max-width: 1116px
+    margin-inline: auto
+
+  .activity-card-grid
+    grid-column: 2 / -1
+    grid-template-columns: repeat(3, 1fr)

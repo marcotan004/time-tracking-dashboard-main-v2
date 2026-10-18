@@ -1,5 +1,4 @@
 @use 'theme'
-@use 'typography'
 
 *,
 *::before,
@@ -20,12 +19,6 @@ body
 img
     object-fit: cover
 
-main
-    display: grid
-    grid-template-columns: 1fr
-    gap: theme.$spacing-300
-    width: 100%
-
 button
     font-family: inherit
     font-weight: inherit
@@ -41,15 +34,3 @@ button
     body
         display: grid
         align-content: center
-
-    .dashboard-profile
-        grid-column: 1 / 2
-
-    main
-        grid-template-columns: repeat(4, 1fr)
-        max-width: 1116px
-        margin-inline: auto
-
-    .activity-card-grid
-        grid-column: 2 / -1
-        grid-template-columns: repeat(3, 1fr)

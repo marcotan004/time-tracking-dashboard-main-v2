@@ -1,0 +1,84 @@
+@use "theme"
+@use "typography"
+
+.activity-card-container
+    background-color: transparent
+    border-radius: theme.$card-radius
+    padding-top: 33px
+    background-repeat: no-repeat
+    background-position: right 16px top -14px, left top
+    overflow: hidden
+
+.activity-card
+    background-color: theme.$navy-900
+    display: flex
+    flex-direction: column
+    gap: theme.$spacing-100
+    padding: theme.$spacing-300
+    border-radius: theme.$card-radius
+    transition: background-color 0.3s ease
+
+    &:hover
+        background-color: theme.$navy-800
+
+    h2
+        @include typography.card-title
+
+    .activity-card-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .icon-button
+            display: flex
+            padding: theme.$spacing-100
+            color: theme.$navy-200
+            cursor: pointer
+
+            &:hover
+                color: theme.$white
+
+    .activity-card-summary
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .activity-card-summary-text
+            @include typography.hour-card-text
+
+        .activity-card-summary-subtext
+            @include typography.supporting-text
+            color: theme.$navy-200
+
+.activity-card--play
+    background-image: url('/images/icon-play.svg'), linear-gradient(to bottom, theme.$blue-300 0px, theme.$blue-300 60px, transparent 60px, transparent 100%)
+
+.activity-card--study
+    background-image: url('/images/icon-study.svg'), linear-gradient(to bottom, theme.$pink-400 0px, theme.$pink-400 60px, transparent 60px, transparent 100%)
+
+.activity-card--exercise
+    background-image: url('/images/icon-exercise.svg'), linear-gradient(to bottom, theme.$green-400 0px, theme.$green-400 60px, transparent 60px, transparent 100%)
+
+.activity-card--work
+    background-image: url('/images/icon-work.svg'), linear-gradient(to bottom, theme.$orange-300 0px, theme.$orange-300 60px, transparent 60px, transparent 100%)
+
+.activity-card--social
+    background-image: url('/images/icon-social.svg'), linear-gradient(to bottom, theme.$purple-700 0px, theme.$purple-700 60px, transparent 60px, transparent 100%)
+
+.activity-card--self-care
+    background-image: url('/images/icon-self-care.svg'), linear-gradient(to bottom, theme.$yellow-300 0px, theme.$yellow-300 60px, transparent 60px, transparent 100%)
+
+@media (min-width: theme.$layout-breakpoint)
+    .activity-card-container
+        padding-top: 45px
+
+    .activity-card
+        gap: theme.$spacing-300
+
+        .activity-card-summary
+            flex-direction: column
+            align-items: flex-start
+            gap: theme.$spacing-100
+
+            .activity-card-summary-text
+                @include typography.text-display

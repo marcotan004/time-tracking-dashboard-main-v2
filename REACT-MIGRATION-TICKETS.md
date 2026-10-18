@@ -35,12 +35,12 @@ Keep this as one page. Routing, global state libraries, UI kits, and server-data
 - [x] Build a static `ProfileCard`, including its existing semantic markup.
 - [ ] Define TypeScript props for the person's name and profile image URL.
 - [ ] Pass the profile details from `App` and render them through JSX expressions in `ProfileCard`.
-- [ ] Keep profile details in props rather than copying them into component state; derive meaningful image alt text from the supplied name.
-- [ ] Temporarily supply a different name and image from `App` to verify that the same component displays another person, then restore Jeremy's details.
-- [ ] Learn `className`, JSX expressions, component names, and self-closing tags.
-- [ ] Import the existing Sass entry directly; remove the HTML link to separately compiled CSS.
-- [ ] Keep images under `public/images` and update Sass image URLs to `/images/...`.
-- [ ] Load Rubik in the React app's HTML and verify the portrait, fonts, and responsive profile layout in the browser.
+- [x] Keep profile details in props rather than copying them into component state; derive meaningful image alt text from the supplied name.
+- [x] Temporarily supply a different name and image from `App` to verify that the same component displays another person, then restore Jeremy's details.
+- [x] Learn `className`, JSX expressions, component names, and self-closing tags.
+- [x] Import the existing Sass entry directly; remove the HTML link to separately compiled CSS.
+- [x] Keep images under `public/images` and update Sass image URLs to `/images/...`.
+- [x] Load Rubik in the React app's HTML and verify the portrait, fonts, and responsive profile layout in the browser.
 
 Receiving props makes the profile respond to the values its parent supplies. No profile state or effect is needed for these static details. Timeframe selection and its controls remain in section 5, where the same state will also drive the activity cards.
 
@@ -48,11 +48,11 @@ Receiving props makes the profile respond to the values its parent supplies. No 
 
 ## 3. Build a typed activity component
 
-- [ ] Define `Timeframe` as the union `daily | weekly | monthly`.
-- [ ] Define an `Activity` type containing its title and current/previous hours for every timeframe.
-- [ ] Create `ActivityCard` with `activity` and `timeframe` props.
-- [ ] Derive the displayed hours, period label, and modifier class from those props.
-- [ ] Keep labels as a typed mapping shared by rendering code.
+- [x] Define `Timeframe` as the union `daily | weekly | monthly`.
+- [x] Define an `Activity` type containing its title and current/previous hours for every timeframe.
+- [x] Create `ActivityCard` with `activity` and `timeframe` props.
+- [x] Derive the displayed hours, period label, and modifier class from those props.
+- [x] Keep labels as a typed mapping shared by rendering code.
 
 **Done when:** One card renders any supplied activity/timeframe without DOM queries.
 

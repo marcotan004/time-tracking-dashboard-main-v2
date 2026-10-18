@@ -1,5 +1,6 @@
-import type { Activity, Timeframe } from "../../types";
 import "./ActivityCard.sass";
+
+import type { Activity, Timeframe } from "../../types";
 
 type ActivityCardProps = {
   mode: Timeframe;

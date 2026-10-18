@@ -1,4 +1,5 @@
 import "./ProfileCard.sass";
+
 import type { Timeframe } from "../../types";
 import TimeframeControls from "../TimeframeControls/TimeframeControls";
 

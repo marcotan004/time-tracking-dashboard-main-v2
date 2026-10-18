@@ -1,9 +1,11 @@
-import { useState } from "react";
-import ProfileCard from "./components/ProfileCard/ProfileCard";
-import ActivityCard from "./components/ActivityCard/ActivityCard";
-import type { Timeframe } from "./types";
 import "./App.sass";
+
+import { useState } from "react";
+
+import ActivityCard from "./components/ActivityCard/ActivityCard";
+import ProfileCard from "./components/ProfileCard/ProfileCard";
 import { useActivities } from "./hooks/useActivities";
+import type { Timeframe } from "./types";
 
 function App() {
   const [mode, setMode] = useState<Timeframe>("daily");

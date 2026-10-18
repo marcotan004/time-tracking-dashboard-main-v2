@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { timeframes } from "../types";
 import { validateActivities } from "./activities.validation";
 

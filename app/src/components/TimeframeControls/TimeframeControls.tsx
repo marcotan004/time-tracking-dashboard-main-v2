@@ -1,6 +1,7 @@
+import "./TimeframeControls.sass";
+
 import type { Timeframe } from "../../types";
 import { timeframes } from "../../types";
-import "./TimeframeControls.sass";
 
 type TimeframeControlsProps = {
   mode: Timeframe;

@@ -151,11 +151,11 @@ Work through these tickets in order. Each one is intentionally small so you can 
 
 **Goal:** Build practical testing habits.
 
-- [ ] Test the controls with mouse, keyboard, and browser DevTools responsive mode.
-- [ ] Inspect hover and focus states.
-- [ ] Compare desktop and mobile against the reference images.
-- [ ] Check headings, button labels, contrast, and image alternatives.
-- [ ] Write down three things you learned about Sass, responsive layout, or JavaScript.
+- [x] Test the controls with mouse, keyboard, and browser DevTools responsive mode.
+- [x] Inspect hover and focus states.
+- [x] Compare desktop and mobile against the reference images.
+- [x] Check headings, button labels, contrast, and image alternatives.
+- [x] Write down three things you learned about Sass, responsive layout, or JavaScript.
 
 **Done when:** The dashboard meets all challenge requirements and you have notes for your next project.
 

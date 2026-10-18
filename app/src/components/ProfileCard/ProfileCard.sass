@@ -1,0 +1,52 @@
+@use "theme"
+@use "typography"
+
+.profile
+    display: flex
+    flex-direction: column
+    background: theme.$navy-900
+    border-radius: theme.$card-radius
+
+    .profile-card
+        background-color: theme.$purple-600
+
+        display: flex
+        gap: theme.$spacing-200
+        padding: theme.$spacing-400
+        border-radius: theme.$card-radius
+        align-items: flex-start
+
+        .profile-picture
+            height: 64px
+            width: 64px
+            border-radius: theme.$avatar-radius
+            border: 2px solid theme.$white
+
+        .profile-desc
+            display: flex
+            flex-direction: column
+            gap: theme.$spacing-100
+
+            p
+                @include typography.supporting-text
+                color: theme.$navy-200
+            h1
+                @include typography.profile-title
+
+@media (min-width: theme.$layout-breakpoint)
+    .profile
+        .profile-card
+            gap: theme.$spacing-500
+            flex-direction: column
+            flex-grow: 1
+
+            .profile-picture
+                height: 78px
+                width: 78px
+
+            .profile-desc
+                gap: 0
+
+                h1
+                    font-size: 40px
+                    line-height: 47px

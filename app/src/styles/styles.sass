@@ -37,58 +37,6 @@ button
     transition: color 0.3s ease
     border: 0
 
-.profile
-    display: flex
-    flex-direction: column
-    background: theme.$navy-900
-    border-radius: theme.$card-radius
-
-    .profile-card
-        background-color: theme.$purple-600
-
-        display: flex
-        gap: theme.$spacing-200
-        padding: theme.$spacing-400
-        border-radius: theme.$card-radius
-        align-items: flex-start
-
-        .profile-picture
-            height: 64px
-            width: 64px
-            border-radius: theme.$avatar-radius
-            border: 2px solid theme.$white
-
-        .profile-desc
-            display: flex
-            flex-direction: column
-            gap: theme.$spacing-100
-
-            p
-                @include typography.supporting-text
-                color: theme.$navy-200
-            h1
-                @include typography.profile-title
-
-    .time-tracking-options-menu
-        display: flex
-        flex-direction: row
-        justify-content: center
-        padding-block: theme.$spacing-300
-
-        button
-            width: 109px
-            color: theme.$purple-500
-
-            &.is-selected
-                color: theme.$white
-
-            &:hover
-                color: theme.$white
-
-            &:focus-visible
-                outline: 2px solid theme.$white
-                outline-offset: 2px
-
 .activity-card-grid
     display: grid
     grid-template-columns: 1fr
@@ -169,38 +117,13 @@ button
         display: grid
         align-content: center
 
+    .dashboard-profile
+        grid-column: 1 / 2
+
     main
         grid-template-columns: repeat(4, 1fr)
         max-width: 1116px
         margin-inline: auto
-
-    .profile
-        grid-column: 1 / 2
-
-        .profile-card
-            gap: theme.$spacing-500
-            flex-direction: column
-            flex-grow: 1
-
-            .profile-picture
-                height: 78px
-                width: 78px
-
-            .profile-desc
-                gap: 0
-
-                h1
-                    font-size: 40px
-                    line-height: 47px
-
-        .time-tracking-options-menu
-            padding-block: 28px
-            padding-inline: theme.$spacing-400
-            flex-direction: column
-            gap: 21px
-
-            button
-                display: flex
 
     .activity-card
         padding-top: 45px

@@ -2,14 +2,22 @@ import { useState } from "react";
 import heroImg from "./assets/hero.png";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
-import ProfileCard from "./ProfileCard";
+import ProfileCard from "./components/ProfileCard/ProfileCard";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <ProfileCard/>
+    <div className="dashboard-profile">
+      <ProfileCard
+        name="Jeremy Robson"
+        profileImage="/images/image-jeremy.png"
+        mode="daily"
+        onModeChange={() => {}}
+      />
+    </div>
+      
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />

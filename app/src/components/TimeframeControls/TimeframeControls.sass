@@ -1,0 +1,32 @@
+@use "theme"
+
+.timeframe-controls
+    display: flex
+    flex-direction: row
+    justify-content: center
+    padding-block: theme.$spacing-300
+
+    button
+        width: 109px
+        color: theme.$purple-500
+        text-transform: capitalize
+
+        &.is-selected
+            color: theme.$white
+
+        &:hover
+            color: theme.$white
+
+        &:focus-visible
+            outline: 2px solid theme.$white
+            outline-offset: 2px
+
+@media (min-width: theme.$layout-breakpoint)
+    .timeframe-controls
+        padding-block: 28px
+        padding-inline: theme.$spacing-400
+        flex-direction: column
+        gap: 21px
+
+        button
+            display: flex
